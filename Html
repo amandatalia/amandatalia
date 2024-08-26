@@ -1,0 +1,329 @@
+<!DOCTYPE html >
+< html >
+< cabeça >
+  < meta  charset =" UTF-8 " >
+  < meta  name =" viewport " content =" width=largura-do-dispositivo, escala-inicial=1.0 " >
+  < título > AluraBooks </ título >
+  < link  rel =" folha de estilo " href =" reset.css " >
+  < link  rel =" pré-conexão " href =" https://fonts.googleapis.com " >
+  < link  rel =" preconnect " href =" https://fonts.gstatic.com " crossorigin >
+  < link  href =" https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap " rel =" folha de estilo " >
+  < link  rel =" folha de estilo " href =" https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css " />
+  < link  rel =" folha de estilo " href =" estilos.css " >
+</ cabeça >
+< corpo >
+  < header  class =" cabeçalho " >
+    < div  class =" contêiner " >
+      < tipo de entrada  =" caixa de seleção " id =" menu " classe =" container__botao " >
+      < rótulo  para =" menu " >
+        < span  class =" cabeçalho__menu-hamburguer container__imagem " > </ span >
+      </ rótulo >
+      < ul  class =" lista-menu " >
+        < li  class =" lista-menu__titulo " > Categorias </ li >
+        < li  class =" lista-menu__item " >
+          < a  href =" # " class =" lista-menu__link " > Programação </ a >
+        </ li >
+        < li  class =" lista-menu__item " >
+          < a  href =" # " class =" lista-menu__link " > Front-end </ a >
+        </ li >
+        < li  class =" lista-menu__item " >
+          < a  href =" # " class =" lista-menu__link " > Infraestrutura </ a >
+        </ li >
+        < li  class =" lista-menu__item " >
+          < a  href =" # " class =" lista-menu__link " > Negócios </ a >
+        </ li >
+        < li  class =" lista-menu__item " >
+          < a  href =" # " class =" lista-menu__link " > Design e UX </ a >
+        </ li >
+      </ul>​​
+      < img  src =" img/Logo.svg " alt =" Logo da Alurabooks " class =" container__imagem " >
+    </div>​​
+    < div  class =" contêiner " >
+      < a  href =" # " > < img  src =" img/Favoritos.svg " alt =" Meus favoritos " class =" container__imagem " > </ a >
+      < a  href =" # " > < img  src =" img/Compras.svg " alt =" Carrinhos de compras " class =" container__imagem " > </ a >
+      < a  href =" # " > < img  src =" img/Usuario.svg " alt =" Meu perfil " class =" container__imagem " > </ a >
+    </div>​​
+  </ cabeçalho >
+  < seção  classe =" banner " >
+    < h2  class =" banner__titulo " > Já sabe por onde começar? </ h2 >
+    < p  class =" banner__texto " > Encontre em nossa estante o que precisa para seu desenvolvimento! </ p >
+    < input  type =" search " class =" banner__pesquisa " placeholder =" Qual será sua próxima leitura? " >
+  </ seção >
+  < seção  classe =" carrossel " >
+    < h2  class =" carrossel__titulo " > Novos lançamentos </ h2 >
+    <!-- Contêiner principal do controle deslizante -->
+    < div  class =" deslizador " >
+      <!-- Wrapper adicional necessário -->
+      < div  class =" swiper-wrapper " >
+        <!-- Slides -->
+        < div  class =" deslizador-deslizante " > < img  src =" img/Apachekafka.svg "
+            alt =" Livro sobre apache kafka e spring boot da alura books " > </ div >
+        < div  class =" swiper-slide " > < img  src =" img/Liderança.svg "
+            alt =" Livro sobre liderança em design design da alura books " > </ div >
+        < div  class =" swiper-slide " > < img  src =" img/Javascript.svg " alt =" Livro sobre javascript assertivo da alura books " >
+        </div>​​
+        < div  class =" deslizador-deslizante " >
+          < img  src =" img/Guia Front-end.svg " alt =" Livro Guia front end " />
+        </div>​​
+        < div  class =" deslizador-deslizante " >
+          < img  src =" img/Portugol.svg " alt =" Livro sobre portugol " />
+        </div>​​
+        < div  class =" deslizador-deslizante " >
+          < img  src =" img/Acessibilidade.svg " alt =" Livro sobre acessibilidade " />
+        </div>​​
+      </div>​​
+      <!-- Se precisarmos de botões de navegação -->
+      < div  class =" botão-deslizante-anterior " > </ div >
+      < div  class =" botão-deslizante-próximo " > </ div >
+    </div>​​
+    < div  class =" cartão " >
+      < div  class =" cartão__descrição " >
+        < div  class =" descrição " >
+          < h3  class =" descrição__titulo " > Talvez você também se interesse por... </ h3 >
+          < h2  class =" descrição__titulo-livro " > Angular 11 e Firebase </ h2 >
+          < p  class =" descrição__texto " >
+            Construindo uma aplicação integrada com a plataforma do Google.
+          </ p >
+        </div>​​
+        < img  src =" img/Angular.svg " class =" descrição__imagem " />
+      </div>​​
+      < div  class =" cartão__botões " >
+        < ul  class =" botões " >
+          < li  class =" botões__item " >
+            < img  src =" img/Favoritos.svg " alt =" Favoritar livro " />
+          </ li >
+          < li  class =" botões__item " >
+            < img  src =" img/Compras.svg " alt =" Adicionar no carrinho de compras " />
+          </ li >
+        </ul>​​
+        < a  href =" # " class =" botões__ancora " > Saiba mais </ a >
+      </div>​​
+    </div>​​
+
+  </ seção >
+
+  < seção  class = ”carrossel” >
+    < h2  class =" carrossel__titulo " > Mais vendidos </ h2 >
+    < div  class =" deslizador " >
+      <!-- Wrapper adicional necessário -->
+      <!-- Se precisarmos de paginação -->
+      < div  class =" swiper-pagination " > </ div >
+
+      < div  class =" swiper-wrapper " >
+        <!-- Slides -->
+        < div  class =" deslizador-deslizante " > < img  src =" img/ApacheKafka.svg "
+            alt =" Livro sobre apache kafka e spring boot da alura books " > </ div >
+        < div  class =" swiper-slide " > < img  src =" img/Liderança.svg " alt =" Livro sobre liderança em design da alura books " >
+        </div>​​
+        < div  class =" swiper-slide " > < img  src =" img/Javascript.svg " alt =" Livro sobre javascript assertivo da alurabooks " >
+        </div>​​
+        < div  class =" swiper-slide " > < img  src =" img/Guia Front-end.svg " alt =" Livro Guia front end " > </ div >
+        < div  class =" swiper-slide " > < img  src =" img/Portugol.svg " alt =" Livro sobre portugol " > </ div >
+        < div  class =" swiper-slide " > < img  src =" img/Acessibilidade.svg " alt =" livro sobre acessibilidade " > </ div >
+      </div>​​
+
+      <!-- Se precisarmos de botões de navegação -->
+      < div  class =" botão-deslizante-anterior " > </ div >
+      < div  class =" botão-deslizante-próximo " > </ div >
+    </div>​​
+
+    < div  class =" cartão " >
+      <!-- 1ª linha -->
+      < div  class =" cartão__descrição " >
+        <!-- 1ª coluna -->
+        < div  class =" descrição " >
+          < img  src =" img/Estrelinhas.svg " alt =" Avaliação 5 estrelas " >
+          < h3  class =" descrição__titulo " > Autora do Mês </ h3 >
+          < h2  class =" descrição__titulo-livro " > Juliana Agarikov </ h2 >
+          < p  class =" descrição__texto " > Analista de sistemas e escritora, Juliana é especialista em Front-End.
+          </ p >
+        </div>​​
+        <!-- 2ª coluna -->
+        < img  src =" img/Escritora.svg " class =" descrição__imagem " >
+      </div>​​
+
+      <!-- 2ª linha -->
+      < div  class =" cartão__botões " >
+        <!-- 1ª coluna -->
+        < ul  class =" botões " >
+          < li  class =" botões__item " > < img  src =" img/Favoritos.svg " alt =" Favoritar livro " > </ li >
+          < li  class =" botões__item " > < img  src =" img/Compras.svg " alt =" Adicionar no carrinho de compras " > </ li >
+        </ul>​​
+        <!-- 2ª coluna -->
+        < a  href =" # " class =" botões__ancora " > Saiba mais </ a >
+      </div>​​
+    </div><!DOCTYPE html >
+< html >
+
+< cabeça >
+    < meta  charset =" UTF-8 " >
+    < meta  name =" viewport " content =" width=largura-do-dispositivo, escala-inicial=1.0 " >
+    < título > AluraBooks </ título >
+    < link  rel =" folha de estilo " href =" reset.css " >
+    < link  rel =" folha de estilo " href =" estilos.css " >
+</ cabeça >
+
+< corpo >
+    < h1 > Alurabook </ h1 >
+
+</ corpo >
+
+</ html >
+ 135 alterações: 135 adições e 0 exclusões135 
+redefinir.css
+Copied! 
+Número da linha do arquivo original	Número da linha de diferença	Mudança de linha diferencial
+@@ -0,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   Licença: nenhuma (domínio público)
+*/
+
+html ,
+corpo ,
+dividir ,
+extensão ,
+applet ,
+objeto ,
+iframe ,
+h1 ,
+h2 ,
+h3 ,
+h4 ,
+h5 ,
+h6 ,
+p ,
+citação em bloco ,
+pré ,
+um ,
+abreviado ,
+sigla ,
+endereço ,
+grande ,
+citar ,
+código ,
+do ,
+dfn ,
+em ,
+imagem ,
+em ,
+kbd ,
+q ,
+é ,
+amostra ,
+pequeno ,
+batida ,
+forte ,
+sub ,
+e aí ,
+tt ,
+var ,
+b ,
+você ,
+eu ,
+centro ,
+dl ,
+dt ,
+dd ,
+olá ,
+o ,
+eu ,
+conjunto de campos ,
+forma ,
+rótulo ,
+lenda ,
+mesa ,
+legenda ,
+corpo ,
+pé ,
+cabeça ,
+tr ,
+º ,
+td ,
+artigo ,
+aparte ,
+tela ,
+detalhes ,
+incorporar ,
+figura ,
+legenda de figo ,
+rodapé ,
+cabeçalho ,
+grupo h ,
+cardápio ,
+navegação ,
+saída ,
+rubi ,
+seção ,
+resumo ,
+tempo ,
+marca ,
+áudio ,
+vídeo {
+    margem :  0 ;
+    preenchimento :  0 ;
+    fronteira :  0 ;
+    tamanho da fonte :  100 % ;
+    fonte : herdar;
+    vertical-align : linha de base;
+}
+
+/* Redefinição da função de exibição HTML5 para navegadores mais antigos */
+artigo ,
+aparte ,
+detalhes ,
+legenda de figo ,
+figura ,
+rodapé ,
+cabeçalho ,
+grupo h ,
+cardápio ,
+navegação ,
+seção {
+    exibir : bloco;
+}
+
+corpo {
+    altura da linha :  1 ;
+}
+
+olá ,
+oi {
+    estilo de lista : nenhum;
+}
+
+citação em bloco ,
+q {
+    citações : nenhuma;
+}
+
+citação em bloco : antes ,
+citação em bloco : depois ,
+q : antes ,
+q : depois {
+    contente :  '' ;
+    conteúdo : nenhum;
+}
+
+mesa {
+    border-collapse : colapso;
+    espaçamento de borda :  0 ;
+}
+ 11 alterações: 11 adições e 0 exclusões11 
+estilos.css
+Número da linha do arquivo original	Número da linha de diferença	Mudança de linha diferencial
+@@ -0,0 +1,11 @@
+: raiz {
+    --cor-de-fundo :  # EBECEE ;
+}
+
+corpo {
+    cor de fundo :  var ( -cor-de-fundo );
+}
+
+h1 {
+    cor de fundo : branco;
+}​​
+
+
+
